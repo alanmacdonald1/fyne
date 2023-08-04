@@ -6,7 +6,7 @@
 
 int MaxDays= 882 ;
 int no_bio_parameters= 277 ;
-static const NO_PARAS= 287781 ;
+static const int NO_PARAS= 287781 ;
 
  // assuming metre depth
 

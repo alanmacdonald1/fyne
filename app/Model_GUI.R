@@ -779,18 +779,8 @@ server <- shinyServer(function(input, output, session) {
   # get proximate composition of ingredients
   proximate_compostion <- reactive({
     
-    Prox.comp = nutrient_table() %>%
-      right_join(FeedComp) %>%
-      write.csv(.,"test.csv")
     
     
-    Prox.comp = nutrient_table() %>%
-      right_join(FeedComp) %>%
-      mutate_at(vars(starts_with("Percentage")), funs(as.numeric)) %>%
-      group_by(Parameter) %>%
-      na.omit() %>%
-      summarise(composition = weighted.mean(As.fed, Percentage)) %>%
-      write.csv(.,"test2.csv")
     
     Prox.comp = nutrient_table() %>%
       right_join(FeedComp) %>%

@@ -1,44 +1,33 @@
-FROM rocker/shiny:3.5.1
-
-RUN apt-get update && apt-get install libcurl4-openssl-dev libv8-3.14-dev -y &&\
-  mkdir -p /var/lib/shiny-server/bookmarks/shiny 
-
-RUN apt-get install -y default-libmysqlclient-dev 
+FROM rocker/shiny:latest
 
 
-RUN apt-get install -y libssl-dev 
+RUN apt-get update && apt-get install libcurl4-openssl-dev libv8-dev -y && \
+    mkdir -p /var/lib/shiny-server/bookmarks/shiny
 
 
-RUN sudo apt-get install -y libjpeg-dev
+RUN apt-get update && \
+    apt-get install -y python3 && \
+    ln -s /usr/bin/python3 /usr/bin/python
 
 
-RUN apt-get install -y mysql-server
+RUN R -e "install.packages(c('reshape2', 'ggmap' , 'readxl', 'magrittr', 'shinyalert','leaflet', 'Hmisc', 'lubridate', 'gridExtra','shiny','hablar', 'RMariaDB', 'shinydashboard', 'shinyjs', 'V8','shinyBS','ggplot2' ,'png' , 'DT'), dependencies = TRUE)"
 
-
-# Download and install library
-
-RUN sudo apt-get install -y libcurl4-gnutls-dev
-
-RUN R -e "install.packages(c('ggmap' , 'readxl', 'magrittr', 'shinyalert','leaflet', 'Hmisc', 'lubridate', 'gridExtra','shiny','hablar', 'RMariaDB',  'shinydashboard', 'shinyjs', 'V8','shinyBS','ggplot2' ,'png' ), dependencies = TRUE)"
-
-# copy the app to the image COPY shinyapps /srv/shiny-server/
-# make all app files readable (solves issue when dev in Windows, but building in Ubuntu)
-
-# Copy the app to the image
 COPY /app/ /srv/shiny-server/
 
+RUN chmod 755 /usr/bin/shiny-server
 
-RUN chmod -R 755 /srv/shiny-server/
+RUN chmod -R a+w /srv/shiny-server/
 
-# Make all app files readable
-RUN chmod -R +r /srv/shiny-server/
+
+RUN chmod -R a+w /usr/local/lib/R/etc
+
 
 
 EXPOSE 3838
 
-# Enable Logging from stdout
 ENV SHINY_LOG_STDOUT=1
 ENV SHINY_LOG_STDERR=1
 
 
-CMD ["/usr/bin/shiny-server.sh"] 
+
+CMD ["/usr/bin/shiny-server"]

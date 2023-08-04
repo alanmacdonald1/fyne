@@ -2,11 +2,10 @@
 
   # set directory
 
-if(Sys.info()['sysname']=="Windows"){
-setwd("/Users/sa07am/OneDrive/Diverseafood/Ecosystem_and_Fatty_Acid_Model/Model_GUI/app/")
-} 
 
 # extra packages required
+
+
 library(lubridate)
 library(shiny)
 library(Hmisc)
