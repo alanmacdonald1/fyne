@@ -1,0 +1,12 @@
+version: '2.13'
+services:
+  app:
+    container_name: Fyne
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 3838:3838
+    working_dir: /app
+    volumes:
+      - ./:/app

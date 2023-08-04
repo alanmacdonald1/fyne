@@ -1,0 +1,2 @@
+int,MaxDays,801
+int,no_bio_parameters,58
