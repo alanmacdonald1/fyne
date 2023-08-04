@@ -5,7 +5,7 @@
 # FYNE (Model of salmon waste and fatty acids in loch fyne IMTA farm)
  
 [![Project version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/alanmacdonald1/fyne)
-[![RShiny version](https://img.shields.io/badge/version-1.0.0-blue)](https://hub.docker.com/layers/rocker/shiny/3.5.1/images/sha256-981ba599bae69ceb49c83d4fa88397206c98701698943c43c76536d1aafb715b?context=explore)
+[![RShiny version](https://img.shields.io/badge/R-%23276DC3.svg?style=flat&logo=r&logoColor=white)](https://hub.docker.com/layers/rocker/shiny/3.5.1/images/sha256-981ba599bae69ceb49c83d4fa88397206c98701698943c43c76536d1aafb715b?context=explore)
 [![Docker version](https://img.shields.io/badge/Docker-20.10.21-blue)](https://www.docker.com/)
 [![Docker Compose version](https://img.shields.io/badge/Docker%20Compose-v2.13.0-blue)](https://docs.docker.com/compose/)
  
