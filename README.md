@@ -1,9 +1,14 @@
-<!-- *** Based on this template -> https://github.com/othneildrew/Best-README-Template/blob/master/README.md  -->
 <a name="readme-top"></a>
 <!-- SUMMARY -->
 *Still in development*
 *As part of the [Diverseafood](https://www.sams.ac.uk/science/projects/diverseafood/) project *
 # FYNE (Model of salmon waste and fatty acids in loch fyne IMTA farm)
+ 
+[![Project version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/alanmacdonald1/fyne)
+[![RShiny version](https://img.shields.io/badge/version-1.0.0-blue)](https://hub.docker.com/layers/rocker/shiny/3.5.1/images/sha256-981ba599bae69ceb49c83d4fa88397206c98701698943c43c76536d1aafb715b?context=explore)
+[![Docker version](https://img.shields.io/badge/Docker-20.10.21-blue)](https://www.docker.com/)
+[![Docker Compose version](https://img.shields.io/badge/Docker%20Compose-v2.13.0-blue)](https://docs.docker.com/compose/)
+ 
 
 ## What is it?
 
@@ -60,7 +65,7 @@ See  [Ren et al. (2012) - An ecosystem model for optimising production in integr
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Custom License for [FYNE]
+# Custom License for FYNE
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
 
