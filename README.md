@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <!-- SUMMARY -->
-*Still in development*
+
 *As part of the [Diverseafood](https://www.sams.ac.uk/science/projects/diverseafood/) project *
 # FYNE (Model of salmon waste and fatty acids in loch fyne IMTA farm)
  
@@ -52,11 +52,6 @@ Restart the container
 docker-compose restart <CONTAINER_ID>
 ```
 
-<!-- TO DO -->
-# Roadmap
-
-- [ ] Ensure main model is compiled properly
-- [ ] Add output files to download
 
 ### Further reading 
 See  [Ren et al. (2012) - An ecosystem model for optimising production in integrated multitrophic aquaculture systems](https://www.sciencedirect.com/science/article/pii/S0304380012003493)
