@@ -75,20 +75,18 @@ This guide will walk you through the steps to install Docker and Docker Compose 
 
 ## Run FYNE GUI
 
-
-1. The docker-compose.yaml file has all the setup details
-2. Bring up the container
- 
+Once docker and docker-compose are installed, simply bring up the container to run
 ```
 docker-compose up
 ```
 
+### Making changes
 
-4. If changes are required, cd into the container 
+If changes are required, cd into the container 
 ```
 docker exec -it <CONTAINER_ID> /bin/bash
 ```
-Do your stuff and exit
+After making changes, exit
 ```
 exit
 ```
