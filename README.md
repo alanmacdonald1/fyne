@@ -72,16 +72,8 @@ This guide will walk you through the steps to install Docker and Docker Compose 
    sudo chmod +x /usr/local/bin/docker-compose
 
 
-## Test the Installation:
 
-Run the following command to verify that Docker Compose was installed correctly:
-
-```bash
-docker-compose --version
-
-
-
-# Docker setup
+## Run FYNE GUI
 
 
 1. The docker-compose.yaml file has all the setup details
