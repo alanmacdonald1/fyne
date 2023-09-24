@@ -28,6 +28,59 @@ R shiny app run in docker that connects to mathematical model in C.
 ![image](https://user-images.githubusercontent.com/43473952/220955023-367e737e-3a75-45a0-8864-50aa9b6194ef.png)
 
 
+
+# HOW TO RUN
+
+## Installing Docker and Docker Compose
+
+This guide will walk you through the steps to install Docker and Docker Compose on macOS and various Linux distributions.
+
+### For macOS Users:
+
+#### Install Docker
+1. Follow the official Docker installation guide for macOS: 
+   [Install Docker on macOS](https://docs.docker.com/desktop/mac/install/)
+2. After installation, verify the Docker installation and check the Docker version by opening a terminal and running:
+   ```bash
+   docker --version
+
+
+
+This guide will walk you through the steps to install Docker and Docker Compose on various Linux distributions.
+
+### For Linux Users:
+
+#### Install Docker
+1. Follow the official Docker installation guide for your specific Linux distribution:
+   - [Install Docker on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+   - [Install Docker on Debian](https://docs.docker.com/engine/install/debian/)
+   - [Install Docker on Fedora](https://docs.docker.com/engine/install/fedora/)
+   - [Install Docker on CentOS](https://docs.docker.com/engine/install/centos/)
+2. After installation, verify the Docker installation and check the Docker version by opening a terminal and running:
+   ```bash
+   docker --version
+
+
+#### Install Docker Compose
+1. Run this command to download the current stable release of Docker Compose:
+   ```bash
+   sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+
+1. Apply executable permissions to the binary:
+   ```bash
+   sudo chmod +x /usr/local/bin/docker-compose
+
+
+## Test the Installation:
+
+Run the following command to verify that Docker Compose was installed correctly:
+
+```bash
+docker-compose --version
+
+
+
 # Docker setup
 
 
