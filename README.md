@@ -97,8 +97,7 @@ docker-compose restart <CONTAINER_ID>
 
 
 ### Further reading 
-See  [Ren et al. (2012) - An ecosystem model for optimising production in integrated multitrophic aquaculture systems](https://www.sciencedirect.com/science/article/pii/S0304380012003493)
-
+See  [MacDonald, A., Serpetti, N. and Franco, S.C., 2024. Optimising seafood nutritional value and environmental sustainability in aquaculture through a novel integrated modelling tool applicable to IMTA and monoculture.](https://www.sciencedirect.com/science/article/pii/S0044848624005076)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
